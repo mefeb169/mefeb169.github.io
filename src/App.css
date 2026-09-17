@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@import "./components/lightswind.css";
+
+/*
+ * Geist Sans is loaded via @fontsource/geist-sans (imported in main.tsx), which bundles its
+ * own correct @font-face rules. A duplicate, hand-written @font-face block used to sit here
+ * pointing at raw node_modules paths (../node_modules/@vercel/fonts/...) — those files failed
+ * to decode in the browser (OTS parsing errors), so it was pure dead weight layered under an
+ * `!important` override. Removed in task 6; @fontsource's own rules are the only font source.
+ */
+* {
+  font-family: "Geist Sans", sans-serif;
+}
+
+

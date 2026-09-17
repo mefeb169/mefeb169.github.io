@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Usama — Full Stack Developer</title>
+    <meta
+      name="description"
+      content="Portfolio of Usama, a Full Stack Developer building ASP.NET Core, React, and TypeScript products — from enterprise dashboards to production platforms."
+    />
+    <meta name="author" content="Usama" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Usama — Full Stack Developer" />
+    <meta
+      property="og:description"
+      content="Full Stack Developer building ASP.NET Core, React, and TypeScript products — from enterprise dashboards to production platforms."
+    />
+    <meta property="og:url" content="https://mefeb169.github.io/" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Usama — Full Stack Developer" />
+    <meta
+      name="twitter:description"
+      content="Full Stack Developer building ASP.NET Core, React, and TypeScript products."
+    />
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!--
+      Set the theme class before first paint (no flash of the wrong theme). Falls back to
+      dark, matching the design's dark-first treatment (AuroraTextEffect, glow accents).
+      The theme-toggle component itself only ever flips the `dark` class on <html>, so this
+      must stay in sync with that, not with a `data-theme` attribute (nothing reads that).
+    -->
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem("theme");
+          var isDark = stored ? stored === "dark" : true;
+          document.documentElement.classList.toggle("dark", isDark);
+        } catch (e) {
+          document.documentElement.classList.add("dark");
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
