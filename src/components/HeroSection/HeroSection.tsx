@@ -93,8 +93,8 @@ export const HeroSection = () => {
                 View Work <ArrowRight className="w-4 h-4" />
               </Button>
             </a>
-            {/* Drop this file at portfolio-site/public/resume.pdf — see task-6-plan.md §3.1 */}
-            <a href="/resume.pdf" download>
+            {/* Served from public/usama-resume.pdf — see task-9-plan.md §4 */}
+            <a href="/usama-resume.pdf" download>
               <Button size="lg" variant="outline" className="rounded-full px-7 h-12 glass-panel text-foreground font-semibold flex items-center gap-2 hover:bg-foreground/10 transition-all hover:-translate-y-1 border-foreground/10">
                 Resume <Download className="w-4 h-4" />
               </Button>
